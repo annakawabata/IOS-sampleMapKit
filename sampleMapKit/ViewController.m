@@ -20,6 +20,9 @@
     //MapViewオブジェクトを生成
     MKMapView *mapView = [[MKMapView alloc] init];
     
+    //デリゲートを設定
+    mapView.delegate = self;
+    
     //大きさ、位置を決定
     mapView.frame = CGRectMake(0,20,self.view.bounds.size.width,self.view.bounds.size.height-20);
     
@@ -97,6 +100,25 @@
     [self.view addSubview:mapView];
     
     
+}
+
+    //ピンを表示する際に発動されるデリゲートメソッド
+    //ピンが降ってくるアニメーションの設定
+-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+    static NSString *pinIdentifier = @"PinAnnotationID";
+    
+    //ピン情報の再利用
+    MKPinAnnotationView *pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:pinIdentifier];
+    
+    if(pinView == nil){
+        //初期化
+        pinView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:pinIdentifier];
+        
+        //落ちるアニメーションの設定
+        pinView.animatesDrop = YES;
+    }
+    
+    return pinView;
 }
 
 
