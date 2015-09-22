@@ -116,7 +116,9 @@
         
         //落ちるアニメーションの設定
         pinView.animatesDrop = YES;
-    }
+      }
+    //吹き出し設定
+    pinView.canShowCallout = YES;
     
     return pinView;
 }
