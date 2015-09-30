@@ -16,6 +16,7 @@
 		13685BD61BAA582B001F1697 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13685BD41BAA582B001F1697 /* LaunchScreen.xib */; };
 		13685BE21BAA582B001F1697 /* sampleMapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13685BE11BAA582B001F1697 /* sampleMapKitTests.m */; };
 		13685BEC1BAA584D001F1697 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13685BEB1BAA584D001F1697 /* MapKit.framework */; };
+		13685D5E1BBA2C36001F1697 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13685D5D1BBA2C36001F1697 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		13685BE01BAA582B001F1697 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13685BE11BAA582B001F1697 /* sampleMapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sampleMapKitTests.m; sourceTree = "<group>"; };
 		13685BEB1BAA584D001F1697 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		13685D5D1BBA2C36001F1697 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13685D5E1BBA2C36001F1697 /* CoreLocation.framework in Frameworks */,
 				13685BEC1BAA584D001F1697 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +71,7 @@
 		13685BB61BAA582B001F1697 = {
 			isa = PBXGroup;
 			children = (
+				13685D5D1BBA2C36001F1697 /* CoreLocation.framework */,
 				13685BEB1BAA584D001F1697 /* MapKit.framework */,
 				13685BC11BAA582B001F1697 /* sampleMapKit */,
 				13685BDE1BAA582B001F1697 /* sampleMapKitTests */,

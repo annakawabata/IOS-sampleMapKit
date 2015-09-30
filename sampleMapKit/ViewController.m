@@ -96,6 +96,9 @@
     
     [mapView addAnnotation:pin5];
     
+    //現在地を表示させる
+    mapView.showsUserLocation = YES;
+    
     //表示するためにViewに追加
     [self.view addSubview:mapView];
     
@@ -105,6 +108,12 @@
     //ピンを表示する際に発動されるデリゲートメソッド
     //ピンが降ってくるアニメーションの設定
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
+   
+    
+    //現在地表示なら nil を返す
+    if(annotation == mapView.userLocation){
+        return nil;
+    }
     static NSString *pinIdentifier = @"PinAnnotationID";
     
     //ピン情報の再利用
