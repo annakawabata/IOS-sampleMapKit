@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>207F6990-4624-49C1-AA57-75CE1C32E189</string>
 	<key>IDESourceControlProjectName</key>
-	<string>sampleMapKit</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>B976025B9B3365B6A0A890C98987CDD354661305</key>
 		<string>https://github.com/annakawabata/IOS-sampleMapKit.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>sampleMapKit.xcodeproj</string>
+	<string>sampleMapKit.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>B976025B9B3365B6A0A890C98987CDD354661305</key>
